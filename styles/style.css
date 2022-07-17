@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    border: 1px solid black;
+    width: 870px;
+    padding: 30px;
+}
+
+.container2 {
+    border: 1px solid black;
+    margin-top: 21px;
+    padding: 30px;
+}
+
+.section-title {
+    color: #562EFF;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 3px;
+}
+
+.section-title2 {
+    color: #562EFF;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 22px;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.player img {
+    height: 56px;
+    width: 56px;
+}
+
+.player-name {
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+hr {
+    margin: 1px solid red;
+}
+
+.top-players {
+    margin-bottom: 30px;
+}
+
+.h1-2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin-left: 16px;
+}
+
+.h3-1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin-left: 16px;
+}
+
+.h3-1 a {
+    text-decoration: none;
+}
+
+.sec2-img {
+    width: 177px;
+    height: 117px;
+}
+
+.cream {
+    display: flex;
+    border: 1px solid black;
+}
+
+.sec2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+}
+
+/* latest course */
+
+.fa-star {
+    color: #FFC014;
+    font-size: 12px;
+}
+
+.empty {
+    color: #aeaeae25;
+}
+
+.parent1 {
+    display: flex;
+    border: 1px solid brown;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img1 img {
+    width: 224px;
+    height: 104px;
+}
+
+.flex1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 23.61px;
+}
+
+/* media queries  */
+
+@media only screen and (max-width: 688px) {
+    .players {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .container {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .player {
+        flex-direction: column;
+    }
+
+    .top-players {
+        width: 100%;
+    }
+
+    .player-name {
+        margin-left: 0px;
+    }
+
+    .sec2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cream {
+        margin-left: 5px;
+        margin-right: 5px;
+        flex-direction: column;
+    }
+
+    .flex1 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .players {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .container {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .player {
+        flex-direction: column;
+    }
+
+    .top-players {
+        width: 100%;
+    }
+
+    .player-name {
+        margin-left: 0px;
+    }
+
+    .sec2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cream {
+        margin-left: 5px;
+        margin-right: 5px;
+        flex-direction: column;
+    }
+
+    .flex1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
